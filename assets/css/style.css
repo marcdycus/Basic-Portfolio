@@ -35,6 +35,7 @@ h1 {
     font-size: 35px;
     line-height: 1.05;
     font-weight: bold;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
 }
 
 a {
@@ -46,8 +47,8 @@ img {
     width: 350px;
     height: 270px;
     margin: 0px 35px 35px 0px;
-
 }
+
 .name {
     float: left;
 }
@@ -68,11 +69,14 @@ img {
     border-bottom: 0px;
     display: inline-block;
     line-height: 20px;
+    transition: 0.4s;
+    z-index: 0;
 }
 
 .links a:hover {
-    background-color: rgb(232, 255, 255);
-    transform: scale(1.2)
+    background-color: #4aaaa5;
+    transform: scale(1.2);
+    color: #ffffff;
 }
 
 .content {
@@ -83,6 +87,8 @@ img {
     box-sizing: border-box;
     margin-top: 100px;
     margin-bottom: 100px;
+    border-radius: 6px;
+    box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.5)
 }
 
 .content2 {
@@ -139,7 +145,7 @@ p {
 .gameName {
     position: absolute;
     display: inline-block;
-    background-color: #4aaaa5;
+    background-color: #8aa5a4;
     padding: 23px;
     width: 304px;
     text-align: center;
@@ -148,17 +154,22 @@ p {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: black;
     transition: 0.8s;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .gameName:hover {
     color: #ffffff;
+    background-color: #4aaaa5;
+    opacity: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 28px;
 }
 
 form {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: gray;
-    height: 500px;
+    height: 518px;
 }
 
 input {
@@ -187,10 +198,16 @@ textarea {
     height: 30px;
     border-color: #4aaaa5;
     outline: none;
+    opacity: 0.5;
+    margin-left: 10px;
+    transition: 0.2s;
+    border-radius: 5px;
 }
 
 .submit:hover {
-    background-color: rgb(35, 207, 207);
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 3px 7px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .submit:active {
@@ -209,6 +226,7 @@ footer {
     position: absolute;
     bottom: -100px;
     padding-top: 40px;
+    padding-bottom: 10px;
     border-top: 8px solid #4aaaa5;
     background-color: gray;
     color: #ffffff;
